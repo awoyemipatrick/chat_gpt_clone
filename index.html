@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5f8389ff06.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Chat GPT clone</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <nav>
+          <div class="nav-left">
+            <img style="width: 25px" src="./assets/edit.svg" alt="" />
+            <div class="dropdown">
+              <button onclick="dropDownBtn()" class="dropdown-btn">
+                ChatGPT
+                <span>4o mini</span>
+                <img
+                  style="width: 15px; margin-left: 5px"
+                  src="./assets/dropdown.svg"
+                  alt=""
+                />
+              </button>
+              <div id="myDropdown" class="dropdown-content"></div>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <button
+                style="background-color: black; color: aliceblue"
+                type="menu"
+              >
+                Login
+              </button>
+            </li>
+            <li>
+              <button type="menu">Sign up</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="chat-container">
+        <div class="header-wrapper">
+          <h2 class="chat-header">What can I help with?</h2>
+        </div>
+        <form class="input-container" action="">
+          <div class="img-inp">
+            <img src="./assets/paper-clip.svg" alt="paper clip" />
+            <input type="text" id="message" placeholder="Message ChatGPT" />
+          </div>
+          <button class="btn" id="send">
+            <img src="./assets/arrowup.svg" alt="" />
+          </button>
+        </form>
+        <div class="suggestion-container">
+          <ul class="">
+            <li>
+              <button>
+                <img src="./assets/plan.svg" alt="" />
+                <span> Make a plan </span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="./assets/summary.svg" alt="" />
+                <span> Summarize text </span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="./assets/advice.svg" alt="" />
+                <span> Get advice </span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="./assets/surprise.svg" alt="" />
+                <span> Surprise me </span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="./assets/code.svg" alt="" />
+                <span> Code </span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="./assets/write.svg" alt="" />
+                <span> Help me write </span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="./assets/brainstorm.svg" alt="" />
+                <span> Brainstorm </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="footer">
+          <span class="terms"
+            >By messaging ChatGPT, you agree to our <a href="#">Terms</a> and
+            have read our <a href="">Privacy Policy</a></span
+          >
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

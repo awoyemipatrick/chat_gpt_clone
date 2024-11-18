@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap");
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  text-size-adjust: 100%;
+}
+
+:root {
+  /* Color Palette */
+  --primary: #3498db;
+  --vibrant: #e74c3c;
+  --tomatoRed: #c0392b;
+  --text: rgb(103, 103, 103);
+  --gray-dark: #34495e;
+  --gray-light: #ecf0f1;
+  --gray: #7f8c8d;
+  --dark: #2c3e50;
+  --light: #ecf0f1;
+  --white: #fff;
+
+  /* Typography */
+  --font-mont: "Montserrat", sans-serif;
+  --size-small: 0.75rem; /* 12px */
+  --size-medium: 1rem; /* 16px */
+  --size-large: 1.5rem; /* 24px */
+  --weight-normal: 400;
+  --weight-bold: 700;
+
+  /* Spacing & Sizing */
+  --spacing-small: 0.5rem; /* 8px */
+  --spacing-medium: 1rem; /* 16px */
+  --spacing-large: 1.25rem; /* 20px */
+  --spacing-xlarge: 1.5rem; /* 24px */
+  --spacing-xxlarge: 2rem; /* 32px */
+  --spacing-xxxlarge: 3.125rem; /* 50px */
+}
+
+/* --------- Reset Styles --------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* -------------------- */
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+/* Header */
+header {
+    padding: 10px 20px; 
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between left and right */
+    align-items: center; /* Center items vertically */
+}
+
+/* Left navigation styling */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left img {
+    width: 30px; 
+}
+
+/* Dropdown button styling */
+.dropdown-btn {
+    border: none; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+/* Reset some default styles */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Dropdown button */
+.dropdown-btn {
+   background-color: white;
+    border: none;
+    padding: 10px 15px; 
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown container */
+.dropdown-content {
+    display: none; 
+    position: absolute; /* Positioning below the dropdown button */
+    background-color: white; /* Background color */
+    border: 1px solid #ccc; /* Border around dropdown */
+    min-width: 200px; /* Minimum width of dropdown */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for effect */
+    z-index: 1; /* Ensure it appears above other elements */
+    padding: 10px; /* Padding for content */
+}
+
+/* Header for dropdown content */
+.dropdown-content h3 {
+    margin: 0 0 10px; /* Margin for spacing */
+    font-size: 16px; /* Font size */
+}
+
+/* Paragraph inside dropdown */
+.dropdown-content p {
+    margin: 0 0 15px; /* Margin for spacing */
+    font-size: 14px; /* Font size */
+    color: #555; /* Text color */
+}
+
+/* Dropdown items */
+.dropdown-content li {
+    margin: 5px 0; /* Margin for spacing */
+}
+
+.dropdown-content button {
+    border: none; /* Remove border */
+    padding: 8px 12px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width */
+}
+
+/* Change background on button hover */
+.dropdown-content button:hover {
+    background-color: #45a049;
+}
+
+/* Show the dropdown when the button is clicked */
+.dropdown.show .dropdown-content {
+    display: block; /* Show dropdown */
+}
+
+
+/* Right navigation styling */
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px; 
+}
+
+nav button[type="menu"] {
+  background-color: white;
+    border-width: 1px;
+    border-color: rgb(182, 181, 181);
+    border-radius: 50px;
+    padding: 8px 15px; /* Padding for buttons */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Chat container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 60%;
+  height: 100vh;
+  margin: 0 auto; /* Centering main container */
+}
+
+.header-wrwpper {
+    line-height: 2.25rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.chat-header {
+    margin-bottom: 1.75rem; 
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(244 244 244 );
+  padding: 7px;
+  border-radius: 70px;
+}
+
+.img-inp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container input {
+  flex-grow: 1;
+  border: none;
+  padding: 7px;
+  font-size: var(--size-medium);
+  background-color: transparent;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(215, 215, 215);
+  width: 30px;
+  height: 30px; 
+  border: none;
+  border-radius: 50%;
+  margin-left: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #dcdcdc;
+}
+
+.suggestion-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggestion-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: var(--spacing-small); 
+  margin-top: var(--spacing-xlarge); 
+  padding: var(--spacing-small);
+  border-radius: 10px;
+}
+
+.suggestion-container ul li button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+  background-color: #fff;
+  border-radius: 25px;
+  border: 1px solid var(--gray-light);
+  padding: 0.5em 1em;
+  gap: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.suggestion-container ul li button:hover {
+  background-color: var(--gray-light);
+}
+
+.footer {
+  min-height: 1rem;
+  color: var(--gray);
+}
+
+.terms {
+  margin-top: var(--spacing-xxlarge);
+  font-size: .875rem;
+}
+
+.terms a {
+  color: var(--gray-dark);
+  text-decoration: underline;
+}
